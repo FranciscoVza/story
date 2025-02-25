@@ -64,6 +64,7 @@ hr {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
+    width: 100%;
     max-width: 250px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -156,4 +157,20 @@ hr {
 
 h1 {
     font-size: clamp(1.8rem, 5vw, 2.5rem);
+}
+
+@media (max-width: 768px){
+    .container-products {
+        flex-direction: column;
+        align-items: center;
+    }
+    .wide-card {
+        padding: 20px;
+    }
+    .wide-card-title {
+        font-size: 1.5rem;
+    }
+    .wide-card-text {
+        font-size: 1rem;
+    }
 }

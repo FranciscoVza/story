@@ -93,26 +93,30 @@ hr {
     background: #fff8f8; /* Color pastel claro */
     border-radius: 25px; /* Bordes redondeados más pronunciados */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
-    margin: 40px 20px; /* Márgenes superior/inferior y laterales */
+    margin: 40px auto; /* Márgenes superior/inferior y centrado automático */
     padding: 30px; /* Espaciado interno */
-    text-align: center;
-    max-width: 90%; /* Ocupa el 90% del ancho disponible */
-    width: calc(100% - 40px); /* Resta el margen para centrarlo */
-    margin-left: auto;
-    margin-right: auto;
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Asegura que el título esté arriba y el texto abajo */
+    align-items: center; /* Centra el contenido horizontalmente */
+    width: 90%; /* Ancho del 90% en pantallas pequeñas */
+    max-width: 900px; /* Limita el ancho en pantallas grandes */
 }
 
+/* Título del recuadro amplio */
 .wide-card-title {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     color: #ff6699;
-    margin-bottom: 15px;
+    text-align: center; /* Centra el título */
+    width: 100%;
+    margin-bottom: 15px; /* Espacio entre título y texto */
 }
 
+/* Contenido del texto */
 .wide-card-text {
-    font-family: 'Lora', serif;
+    text-align: left; /* Alinea el texto a la izquierda */
     font-size: 1.1rem;
-    color: #555;
     line-height: 1.8;
-    
+    max-width: 800px; /* Ajusta el ancho máximo del texto */
+    margin: 0 auto; /* Centra el bloque de texto sin afectar su alineación */
 }

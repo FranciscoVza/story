@@ -1,0 +1,118 @@
+/* Estilos generales */
+body {
+    font-family: 'Lora', serif;
+    background: linear-gradient(to bottom, #fff0f5, #ffe6e6);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #ff9999, #ffb3b3);
+    color: white;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+hr {
+    border: none;
+    border-top: 2px dashed #ffcccc;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Contenedor de productos */
+.container-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo de cada tarjeta */
+.card-product {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-product h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #ff6699;
+    margin-bottom: 10px;
+}
+
+.card-product img {
+    width: 200px; /* Ancho fijo */
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Recorta la imagen si es necesario para mantener la proporción */
+    border-radius: 10px; /* Bordes redondeados (opcional) */
+}
+
+.card-product .description {
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card-product {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Estilo del recuadro amplio */
+.wide-card {
+    background: #fff8f8; /* Color pastel claro */
+    border-radius: 25px; /* Bordes redondeados más pronunciados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    margin: 40px 20px; /* Márgenes superior/inferior y laterales */
+    padding: 30px; /* Espaciado interno */
+    text-align: center;
+    max-width: 90%; /* Ocupa el 90% del ancho disponible */
+    width: calc(100% - 40px); /* Resta el margen para centrarlo */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wide-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #ff6699;
+    margin-bottom: 15px;
+}
+
+.wide-card-text {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    
+}

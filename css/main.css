@@ -121,28 +121,3 @@ hr {
     margin: 0 auto; /* Centra el bloque de texto sin afectar su alineación */
 }
 
-
-.banner-lateral {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 200px;
-    font-size: 1.2rem;
-    text-align: center;
-    color: #ff6699;
-    font-weight: bold;
-}
-
-.banner-izquierda {
-    left: 10px;
-}
-
-.banner-derecha {
-    right: 10px;
-}
-
-@media (max-width: 768px) { /* Oculta en móviles */
-    .banner-lateral {
-        display: none;
-    }
-}

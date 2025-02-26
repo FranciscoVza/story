@@ -16,10 +16,6 @@ scrollTopBtn.addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.body.classList.add('dark-mode');
-}
-
 
 function typeWriterEffect(elementId, text, speed = 50, callback = null) {
     let i = 0;
@@ -54,3 +50,52 @@ const mensaje2 = `Hola de nuevo, espero que hayas tenido un bonito dia mi amor, 
             typeWriterEffect("mensaje2", mensaje2, 15);
     });
 
+
+    document.addEventListener("DOMContentLoaded", () => {
+        // Datos de las imágenes
+        const images = [
+            { title: "De Las Primeras", src: "/story/images/nosotros.webp", description: "Una de nuestras primeras fotos, nuestra favorita." },
+            { title: "Última Cita", src: "/story/images/nosotros1.jpg", description: "Nuestra última foto juntos, la más especial." },
+            { title: "Viaje Romántico", src: "/story/images/nosotros2.png", description: "Nuestro viaje romántico cuando nos casamos en Roblox." },
+            { title: "Boda", src: "/story/images/nosotros3.jpg", description: "Cómo olvidar el día en que nos casamos. Éramos tan jóvenes." },
+            { title: "Favorita", src: "/story/images/nosotros4.jpg", description: "Una de las fotos más bonitas que tenemos. Muak." },
+            { title: "Invierno", src: "/story/images/nosotros5.jpg", description: "Nuestra foto acurrucados en invierno, yo era tu osito. Te amo." },
+            { title: "Primera del Año", src: "/story/images/nosotros6.jpg", description: "La primera vez que nos vimos este año, tan irreal y hermoso." },
+            { title: "Besito", src: "/story/images/nosotros7.jpg", description: "Esta fotito está porque tú me diste un besito. Muak." }
+        ];
+    
+        // Contenedor de la galería
+        const galleryContainer = document.getElementById("gallery-container");
+    
+        // Generar tarjetas dinámicamente
+        images.forEach(img => {
+            const card = document.createElement("div");
+            card.classList.add("col-md-6", "col-lg-4");
+            card.dataset.aos = "fade-up";
+            card.innerHTML = `
+                <div class="card shadow-sm border-0">
+                    <h5 class="card-header text-center bg-light">${img.title}</h5>
+                    <img src="${img.src}" class="card-img-top" alt="${img.title}">
+                    <div class="card-body">
+                        <p class="card-text">${img.description}</p>
+                    </div>
+                </div>
+            `;
+            galleryContainer.appendChild(card);
+        });
+    
+        // Función para activar el botón de scroll arriba
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        scrollTopBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    
+        // Modo oscuro
+        function toggleDarkMode() {
+            document.body.classList.toggle("bg-dark");
+            document.body.classList.toggle("text-white");
+        }
+    
+        window.toggleDarkMode = toggleDarkMode;
+    });
+    

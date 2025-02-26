@@ -3,94 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/story/css/main.css">
-    <title>Galeria</title>
-</head>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-<button id="scrollTopBtn">⬆</button>
-<button onclick="toggleDarkMode()">🌙</button>
-
-
-<body>
-    <header>
-        <h1>Nuestra Galería de Recuerdos</h1>
-        <hr>
-    </header>
-    <div class="container-products">
-        <!-- Tarjeta 1 -->
-        <div class="card-product" data-aos="fade-up">
-            <h3>De Las Primeras</h3>
-            <hr>
-            <img src="/story/images/nosotros.webp" alt="Nuestro Primer Encuentro">
-            <p class="description">Una de nuestras primeras fotos, es de las primeras fotos que se volvio la favorita de ambos, hasta la tengo subida en mi perfil, pero la tengo archivada jeje.</p>
-        </div>
-
-        <!-- Tarjeta 2 -->
-        <div class="card-product" data-aos="fade-up">
-
-            <h3>Ultima Cita</h3>
-            <hr>
-            <img src="/story/images/nosotros1.jpg" alt="Primera Cita">
-            <p class="description">Una de nuestras últimas fotos juntos y que se volvió la favorita de los dos, la favorita en toda la relación.</p>
-        </div>
-
-        <!-- Tarjeta 3 -->
-        <div class="card-product" data-aos="fade-up">
-            <h3>Viaje Romántico</h3>
-            <hr>
-            <img src="/story/images/nosotros2.png" alt="Viaje Romántico">
-            <p class="description">Nuestro viaje romántico al día en el que nos casamos en Roblox jsjsjs te amo.</p>
-        </div>
-        <!-- Tarjeta 4 -->
-        <div class="card-product" data-aos="fade-up">
-            <h3>Boda</h3>
-            <hr>
-            <img src="/story/images/nosotros3.jpg" alt="Viaje Romántico">
-            <p class="description">Como olvidar el dia que nos casamos, eramos tan jovenes jsjs.</p>
-        </div>
-
-        <div class="card-product" data-aos="fade-up">
-            <h3>Favorita</h3>
-            <hr>
-            <img src="/story/images/nosotros4.jpg" alt="Viaje Romántico">
-            <p class="description">Una de mis fotos favoritas, estas son de las mas bonitas que tenemos (segun yo) pero lamentablemente no la pudiste resubir por la ubicacion de la foto deah jsjsjs muuuak.</p>
-        </div>
-
-        <div class="card-product" data-aos="fade-up">
-            <h3>Invierno</h3>
-            <hr>
-            <img src="/story/images/nosotros5.jpg" alt="Viaje Romántico">
-            <p class="description">Otra de nuestras fotos mas bonitas, porque era invierno deah, y estabamos acostados juntitos bien apapachados por el frio jsjsjs, y yo era tu osito por lo peludo y no sentias frio conmigo a tu lado. Te amo.</p>
-        </div>
-
-        <div class="card-product" data-aos="fade-up">
-            <h3>Primera del año</h3>
-            <hr>
-            <img src="/story/images/nosotros6.jpg" alt="Viaje Romántico">
-            <p class="description">La primera vez que nos juntabamos este año, nos pusimos tan nerviosos cuando nos vimos por primera vez jsjsjs, se sentia raro, como si fuera irreal el poder tocarnos y poder abrazarnos con fuerza.</p>
-        </div>
-
-        <div class="card-product" data-aos="fade-up">
-            <h3>Besito</h3>
-            <hr>
-            <img src="/story/images/nosotros7.jpg" alt="Viaje Romántico">
-            <p class="description">Esta fotito esta porque tu me diste el besito jsjsjs, entonces para que estemos igual muuuak.</p>
-        </div>
-    </div>
-
-    <!-- Recuadro Amplio-->
-    <div class="wide-card">
-        <h2 class="wide-card-title">💗Un Mensaje Especial Para Ti💗</h2>
-        <p id="mensaje1" class="wide-card-text"></p>
-    </div>
-    <div class="wide-card">
-        <h2 class="wide-card-title">💗Segundo Mensaje jeje💗</h2>
-        <p id="mensaje2" class="wide-card-text"></p>
-    </div>
+    <title>Galería</title>
     
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/story/css/main.css">
+
+    <!-- AOS Animations -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+<body>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Botones flotantes -->
+    <button id="scrollTopBtn" class="btn btn-primary position-fixed bottom-0 end-0 m-3">⬆</button>
+
+    <!-- Header -->
+    <header class="text-center my-4">
+        <h1 class="display-5 fw-bold">Nuestra Galería de Recuerdos</h1>
+        <hr class="w-50 mx-auto">
+    </header>
+
+    <!-- Contenedor de imágenes -->
+    <div class="container">
+        <div class="row g-4" id="gallery-container"></div>
+    </div>
+
+    <!-- Mensajes Especiales -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card bg-light p-4 shadow-sm">
+                    <h2 class="text-center">💗 Un Mensaje Especial Para Ti 💗</h2>
+                    <p id="mensaje1" class="text-muted"></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-light p-4 shadow-sm">
+                    <h2 class="text-center">💗 Segundo Mensaje jeje 💗</h2>
+                    <p id="mensaje2" class="text-muted"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Archivo JavaScript Externo -->
     <script src="/story/js/script.js"></script>
 
 </body>

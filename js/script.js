@@ -89,13 +89,5 @@ const mensaje2 = `Hola de nuevo, espero que hayas tenido un bonito dia mi amor, 
         scrollTopBtn.addEventListener("click", () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
         });
-    
-        // Modo oscuro
-        function toggleDarkMode() {
-            document.body.classList.toggle("bg-dark");
-            document.body.classList.toggle("text-white");
-        }
-    
-        window.toggleDarkMode = toggleDarkMode;
-    });
+});
     

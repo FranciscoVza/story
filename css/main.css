@@ -252,3 +252,23 @@ h1 {
     border-radius: 0 0 10px 10px; /* Bordes redondeados solo abajo */
     text-align: center;
 }
+
+/* Cambiar el color de fondo donde no hay imagen */
+.card {
+    background-color: #ffe6f2; /* Color rosa claro, cámbialo si deseas */
+}
+
+/* Ajuste específico para el área de la imagen */
+.card-img-top {
+    background-color: #ffe6f2; /* Igual que el fondo de la tarjeta para uniformidad */
+}
+
+/* Línea divisoria entre imagen y descripción */
+.card-body::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px; /* Grosor de la línea */
+    background-color: #ff69b4; /* Color rosa, puedes cambiarlo */
+    margin: 10px 0; /* Espaciado arriba y abajo */
+}

@@ -87,6 +87,12 @@ hr {
     object-fit: cover; /* Recorta la imagen si es necesario para mantener la proporción */
     border-radius: 10px; /* Bordes redondeados (opcional) */
 }
+.card-product img {
+    transition: transform 0.3s ease-in-out;
+}
+.card-product img:hover {
+    transform: scale(1.05);
+}
 
 .card-product .description {
     font-family: 'Lora', serif;

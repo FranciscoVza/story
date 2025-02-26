@@ -54,14 +54,14 @@ const mensaje2 = `Hola de nuevo, espero que hayas tenido un bonito dia mi amor, 
     document.addEventListener("DOMContentLoaded", () => {
         // Datos de las imágenes
         const images = [
-            { title: "De Las Primeras", src: "/story/images/nosotros.webp", description: "Una de nuestras primeras fotos, nuestra favorita." },
-            { title: "Última Cita", src: "/story/images/nosotros1.jpg", description: "Nuestra última foto juntos, la más especial." },
-            { title: "Viaje Romántico", src: "/story/images/nosotros2.png", description: "Nuestro viaje romántico cuando nos casamos en Roblox." },
-            { title: "Boda", src: "/story/images/nosotros3.jpg", description: "Cómo olvidar el día en que nos casamos. Éramos tan jóvenes." },
-            { title: "Favorita", src: "/story/images/nosotros4.jpg", description: "Una de las fotos más bonitas que tenemos. Muak." },
-            { title: "Invierno", src: "/story/images/nosotros5.jpg", description: "Nuestra foto acurrucados en invierno, yo era tu osito. Te amo." },
-            { title: "Primera del Año", src: "/story/images/nosotros6.jpg", description: "La primera vez que nos vimos este año, tan irreal y hermoso." },
-            { title: "Besito", src: "/story/images/nosotros7.jpg", description: "Esta fotito está porque tú me diste un besito. Muak." }
+            { title: "De Las Primeras", src: "/story/images/nosotros.webp", description: "Una de nuestras primeras fotitos que se volvio nuestra favorita por un buen tiempo, hasta la tengo de publicacion en mi ig jsjsjs." },
+            { title: "Última Cita", src: "/story/images/nosotros1.jpg", description: "Nuestra ultima foto juntitos, salimos bien bonitos, pero mas bonita tu muuuuak." },
+            { title: "Viaje Romántico", src: "/story/images/nosotros2.png", description: "Como no recordar la vez que nos casamos en roblox :3." },
+            { title: "Boda", src: "/story/images/nosotros3.jpg", description: "Cómo olvidar el dia que nos casamos. Nos vemos tan jovenes jsjsjs." },
+            { title: "Favorita", src: "/story/images/nosotros4.jpg", description: "Una de las primeras fotos que se volvio de las favoritas, bien bonita." },
+            { title: "Invierno", src: "/story/images/nosotros5.jpg", description: "Nuestra fotito de invierno jsjsjs, estabamos bien acurrucados porque conmigo no sentias frio, era tu osito por lo peludo jsjsjsjs, y no sentias frio cuando dormias conmigo, te amo." },
+            { title: "Primera del Año", src: "/story/images/nosotros6.jpg", description: "La primera vez que nos vimos este año, fue tan bonito, era como irreal, el poder tocarnos y sentirnos, estabamos bien nerviosos." },
+            { title: "Besito", src: "/story/images/nosotros7.jpg", description: "Esta fotito está porque esta bonita, y porque hay una foto en la que yo te doy besito, y entonces asi estamos a la par jsjs te amo mucho mi gatita." }
         ];
     
         // Contenedor de la galería

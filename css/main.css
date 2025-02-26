@@ -224,7 +224,7 @@ h1 {
 
 /* Estilo para los mensajes en la tarjeta ancha */
 .wide-card-text {
-    font-family: "Poppins", Arial, sans-serif;
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
     color: #333;
     line-height: 1.8;
@@ -244,4 +244,11 @@ h1 {
 .card:hover {
     transform: translateY(-8px); /* Mueve la tarjeta hacia arriba */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+}
+/* Estilo para la descripción de las imágenes */
+.card .card-body {
+    background-color: #ffe6f2; /* Un rosa claro suave, puedes cambiarlo */
+    padding: 15px;
+    border-radius: 0 0 10px 10px; /* Bordes redondeados solo abajo */
+    text-align: center;
 }

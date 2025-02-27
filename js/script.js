@@ -45,11 +45,16 @@ const mensaje2 = `Hola de nuevo, espero que hayas tenido un bonito dia mi amor, 
             No tengas en mente eso de que andare mirando, porque no sera asi, ¿que clase de tonto seria si lo hiciera?, yo no te cambiaria por nadie mi amor, tampoco miraria a nadie que no seas tu, porque tengo ojos solo para ti mi vida, ma vie, mi repollito, mi potito, solo tu y nadie mas.
             Te amo mucho, no se que haria sin ti gatita, sin ti no soy nadie, no tengo nada si no te tengo a ti, sin tu amor no tengo nada, si no te tengo a mi lado, nada vale la pena.`;
 
-        document.addEventListener("DOMContentLoaded", function() {
-            typeWriterEffect("mensaje1", mensaje1, 15);
-            typeWriterEffect("mensaje2", mensaje2, 15);
-    });
+const mensaje3 = `Aun recuerdo la primera vez que empezamos a hablar, fue tan bonito, tan especial, porque como sabes, tuvimos y sentimos esa conexion, esa quimica, esa chispa que nos unio, que nos hizo conocernos, que nos hizo querernos, que nos hizo amarnos, que nos hizo ser lo que somos hoy, una pareja enamorada. Sentia no se, tanta conexion contigo, tanto amor, que lo unico que yo queria era estar contigo, era hablarte, era conocerte, y a dia de hoy sigue siendo igual, me sigo enamorando de ti, siento que nuestra conexion se fortalece, como tu dijiste; "nos estamos hacercando mas apesar de la distancia" o algo asi dijiste jsjsjs te amo.
+Y no puedo evitar desear estar contigo, desde que te conoci es lo que mas deseo gatita, porque tu eres mi todo, no hay nada que desee con mas ganas que el poder casarme contigo, el formar una familia, el vivir juntos, el ser marido y mujer jsjsjs :3 y tu sabes eso mi amor, que eso es lo que mas deseo, y solo lo deseo contigo, solo te amo a ti, solo te quiero a ti, no necesito nada mas si te tengo a ti, mi propia carrera no me importa si te tengo a mi lado, porque tu eres mi vida, tu eres mi amor, tu eres mi todo.💓💖💗`;
 
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("mensaje1").innerText = mensaje1;
+        document.getElementById("mensaje2").innerText = mensaje2;
+        document.getElementById("mensaje3").innerText = mensaje3;
+    });
+    //typeWriterEffect("mensaje3", mensaje3, 15); para que tenga el efecto de maquina de escribir
+    
 
     document.addEventListener("DOMContentLoaded", () => {
         // Datos de las imágenes

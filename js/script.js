@@ -63,14 +63,14 @@ Hola miamorshito bella, quiero decirte que eres muy bella, y hermosa, aunque eso
     document.addEventListener("DOMContentLoaded", () => {
         // Datos de las imágenes
         const images = [
-            { title: "De Las Primeras", src: "/story/images/nosotros.webp", description: "Una de nuestras primeras fotitos que se volvio nuestra favorita por un buen tiempo, hasta la tengo de publicacion en mi ig jsjsjs." },
-            { title: "Última Cita", src: "/story/images/nosotros1.jpg", description: "Nuestra ultima foto juntitos, salimos bien bonitos, pero mas bonita tu muuuuak." },
-            { title: "Viaje Romántico", src: "/story/images/nosotros2.png", description: "Como no recordar la vez que nos casamos en roblox :3." },
-            { title: "Boda", src: "/story/images/nosotros3.jpg", description: "Cómo olvidar el dia que nos casamos. Nos vemos tan jovenes jsjsjs." },
-            { title: "Favorita", src: "/story/images/nosotros4.jpg", description: "Una de las primeras fotos que se volvio de las favoritas, bien bonita." },
-            { title: "Invierno", src: "/story/images/nosotros5.jpg", description: "Nuestra fotito de invierno jsjsjs, estabamos bien acurrucados porque conmigo no sentias frio, era tu osito por lo peludo jsjsjsjs, y no sentias frio cuando dormias conmigo, te amo." },
-            { title: "Primera del Año", src: "/story/images/nosotros6.jpg", description: "La primera vez que nos vimos este año, fue tan bonito, era como irreal, el poder tocarnos y sentirnos, estabamos bien nerviosos." },
-            { title: "Besito", src: "/story/images/nosotros7.jpg", description: "Esta fotito está porque esta bonita, y porque hay una foto en la que yo te doy besito, y entonces asi estamos a la par jsjs te amo mucho mi gatita." }
+            { title: "De Las Primeras", src: "/images/nosotros.webp", description: "Una de nuestras primeras fotitos que se volvio nuestra favorita por un buen tiempo, hasta la tengo de publicacion en mi ig jsjsjs." },
+            { title: "Última Cita", src: "/images/nosotros1.jpg", description: "Nuestra ultima foto juntitos, salimos bien bonitos, pero mas bonita tu muuuuak." },
+            { title: "Viaje Romántico", src: "/images/nosotros2.png", description: "Como no recordar la vez que nos casamos en roblox :3." },
+            { title: "Boda", src: "/images/nosotros3.jpg", description: "Cómo olvidar el dia que nos casamos. Nos vemos tan jovenes jsjsjs." },
+            { title: "Favorita", src: "/images/nosotros4.jpg", description: "Una de las primeras fotos que se volvio de las favoritas, bien bonita." },
+            { title: "Invierno", src: "/images/nosotros5.jpg", description: "Nuestra fotito de invierno jsjsjs, estabamos bien acurrucados porque conmigo no sentias frio, era tu osito por lo peludo jsjsjsjs, y no sentias frio cuando dormias conmigo, te amo." },
+            { title: "Primera del Año", src: "/images/nosotros6.jpg", description: "La primera vez que nos vimos este año, fue tan bonito, era como irreal, el poder tocarnos y sentirnos, estabamos bien nerviosos." },
+            { title: "Besito", src: "/images/nosotros7.jpg", description: "Esta fotito está porque esta bonita, y porque hay una foto en la que yo te doy besito, y entonces asi estamos a la par jsjs te amo mucho mi gatita." }
         ];
     
         // Contenedor de la galería

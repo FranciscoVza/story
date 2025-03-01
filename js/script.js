@@ -55,6 +55,7 @@ Hola miamorshito bella, quiero decirte que eres muy bella, y hermosa, aunque eso
         document.getElementById("mensaje1").innerText = mensaje1;
         document.getElementById("mensaje2").innerText = mensaje2;
         document.getElementById("mensaje3").innerText = mensaje3;
+        document.getElementById("mensaje4").innerText = mensaje4;
     });
     //typeWriterEffect("mensaje3", mensaje3, 15); para que tenga el efecto de maquina de escribir
     

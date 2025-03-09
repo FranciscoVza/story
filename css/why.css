@@ -345,3 +345,26 @@ h1::after {
   width: 100% !important; /* Forzar ancho completo */
   display: block; /* Asegurar que ocupe todo el espacio */
 }
+
+@media (max-width: 768px) {
+  /* Desactivar completamente el efecto typewriter */
+  .typewriter {
+    overflow: visible;
+    white-space: normal;
+    border-right: none;
+    animation: none;
+    width: auto !important;
+    opacity: 1 !important;
+  }
+
+  /* Animación de entrada alternativa para el título */
+  h1 {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}

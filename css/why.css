@@ -102,6 +102,8 @@ h1::after {
   box-shadow: 0 8px 20px rgba(200, 159, 176, 0.1);
   border: 1px solid rgba(213, 143, 171, 0.1);
   overflow: hidden;
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
 }
 
 .reason-item::before {
@@ -158,92 +160,87 @@ h1::after {
 
 /* Animaciones */
 @keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Animación de retraso para los elementos de la lista */
+.reason-item:nth-child(1) { animation-delay: 0.3s; }
+.reason-item:nth-child(2) { animation-delay: 0.6s; }
+.reason-item:nth-child(3) { animation-delay: 0.9s; }
+.reason-item:nth-child(4) { animation-delay: 1.2s; }
+.reason-item:nth-child(5) { animation-delay: 1.5s; }
+.reason-item:nth-child(6) { animation-delay: 1.8s; }
+
+/* Estilos de typewriter - solo visible en escritorio */
 .typewriter {
   overflow: hidden;
-  border-right: 3px solid #e66465;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.05em;
-  animation: typing 4.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
+@media (min-width: 769px) {
+  .typewriter {
+    border-right: 3px solid #e66465;
+    animation: typing 4.5s steps(40, end), blink-caret 0.75s step-end infinite;
   }
-  to {
-    width: 100%;
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
   }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #e66465; }
   }
-  50% {
-    border-color: #e66465;
-  }
-}
-
-/* Animación de entrada para los elementos de la lista */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.reason-item {
-  opacity: 0;
-  animation: fadeInUp 0.8s forwards;
-}
-
-.reason-item:nth-child(1) {
-  animation-delay: 0.3s;
-}
-.reason-item:nth-child(2) {
-  animation-delay: 0.6s;
-}
-.reason-item:nth-child(3) {
-  animation-delay: 0.9s;
-}
-.reason-item:nth-child(4) {
-  animation-delay: 1.2s;
-}
-.reason-item:nth-child(5) {
-  animation-delay: 1.5s;
-}
-.reason-item:nth-child(6) {
-  animation-delay: 1.8s;
 }
 
 /* Media queries para responsividad */
 @media (max-width: 768px) {
   .container {
-    margin: 40px 20px;
-    padding: 30px 25px 50px;
+    margin: 40px 15px;
+    padding: 20px 15px 40px;
+    width: auto;
+    overflow: visible;
+  }
+
+  .text-center {
+    margin-bottom: 30px;
+    width: 100%;
   }
 
   h1 {
-    font-size: 2.6rem;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    width: auto;
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    white-space: normal;
   }
 
+  /* Quitar efecto typewriter en móvil */
+  .typewriter {
+    width: 100% !important;
+    animation: none;
+    white-space: normal;
+    border-right: none;
+    opacity: 1;
+    overflow: visible;
+  }
+
+  /* Reposicionar corazón */
   h1::after {
-    right: -40px;
+    position: static;
+    display: block;
+    margin: 10px auto 0;
     font-size: 1.6rem;
   }
 
@@ -253,22 +250,23 @@ h1::after {
   }
 
   .reason-item {
-    padding: 25px;
+    padding: 20px;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    margin: 20px 15px;
-    padding: 25px 20px 40px;
+    margin: 20px 10px;
+    padding: 15px 15px 30px;
+    border-radius: 12px;
   }
 
   h1 {
-    font-size: 2.2rem;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
   }
 
   h1::after {
-    right: -30px;
     font-size: 1.4rem;
   }
 
@@ -281,90 +279,14 @@ h1::after {
   }
 }
 
-/* Añadido para corregir el elemento en blanco */
-.reason-item:empty,
-.reason-item:has(.reason-title:empty) {
-  display: none;
-}
-/* Estilos específicos para el título en móviles */
-@media (max-width: 768px) {
-  .container {
-    margin: 40px 15px; /* Reducido margen lateral */
-    padding: 25px 20px 40px; /* Reducido padding */
-    width: auto; /* Asegurar que se adapte al ancho disponible */
-    overflow: hidden; /* Prevenir desbordamiento */
-  }
-
-  .text-center {
-    margin-bottom: 40px;
-    width: 100%; /* Asegurar que ocupe todo el ancho disponible */
-  }
-
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    width: 100%; /* Limitar el ancho al contenedor */
-    display: block; /* Cambiar de inline-block a block */
-    text-align: center; /* Centrar el texto */
-    word-break: break-word; /* Permitir romper palabras largas */
-    padding-right: 0; /* Eliminar padding que podría causar desbordamiento */
-  }
-
-  /* Reposicionar el corazón */
-  h1::after {
-    position: static; /* Quitar posicionamiento absoluto */
-    display: block; /* Colocar en su propia línea */
-    margin: 10px auto 0; /* Centrar y dar espacio arriba */
-    right: auto; /* Eliminar posición derecha */
-  }
-}
-
-/* Para pantallas aún más pequeñas */
-@media (max-width: 480px) {
-  .container {
-    margin: 20px 10px;
-    padding: 20px 15px 30px;
-  }
-
-  h1 {
-    font-size: 1.7rem; /* Reducir aún más el tamaño */
-    margin-bottom: 10px;
-  }
-}
-
-/* Para teléfonos muy pequeños */
 @media (max-width: 360px) {
   h1 {
     font-size: 1.5rem;
   }
 }
-.typewriter {
-  white-space: normal; /* Permitir saltos de línea */
-  border-right: none; /* Quitar el cursor parpadeante en móvil */
-  animation: none; /* Deshabilitar la animación de typing en móvil */
-  width: 100% !important; /* Forzar ancho completo */
-  display: block; /* Asegurar que ocupe todo el espacio */
-}
 
-@media (max-width: 768px) {
-  /* Desactivar completamente el efecto typewriter */
-  .typewriter {
-    overflow: visible;
-    white-space: normal;
-    border-right: none;
-    animation: none;
-    width: auto !important;
-    opacity: 1 !important;
-  }
-
-  /* Animación de entrada alternativa para el título */
-  h1 {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
+/* Corrección para elementos vacíos */
+.reason-item:empty,
+.reason-item:has(.reason-title:empty) {
+  display: none;
 }

@@ -338,3 +338,10 @@ h1::after {
     font-size: 1.5rem;
   }
 }
+.typewriter {
+  white-space: normal; /* Permitir saltos de línea */
+  border-right: none; /* Quitar el cursor parpadeante en móvil */
+  animation: none; /* Deshabilitar la animación de typing en móvil */
+  width: 100% !important; /* Forzar ancho completo */
+  display: block; /* Asegurar que ocupe todo el espacio */
+}

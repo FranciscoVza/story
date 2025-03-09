@@ -272,3 +272,89 @@ h1 {
     background-color: #ff69b4; /* Color rosa, puedes cambiarlo */
     margin: 10px 0; /* Espaciado arriba y abajo */
 }
+
+/* Estilos para el botón "¿Por qué?" */
+#boton {
+    --color-primario: #ff69b4;
+    --color-secundario: #ff1493;
+    --color-fondo: #ffe6f2;
+    --sombra: 0 4px 15px rgba(255, 105, 180, 0.3);
+
+    display: inline-block;
+    padding: 15px 40px;
+    margin: 40px auto 20px;
+    
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    
+    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+    border: none;
+    border-radius: 30px;
+    box-shadow: var(--sombra);
+    
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efectos hover */
+#boton:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+}
+
+/* Brillo interactivo */
+#boton::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        circle,
+        rgba(255,255,255,0.3),
+        transparent 20%
+    );
+    transform: rotate(45deg);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+#boton:hover::before {
+    opacity: 1;
+    transform: rotate(45deg) scale(1.2);
+}
+
+/* Borde decorativo */
+#boton::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 3px;
+    background: linear-gradient(90deg, #ff9999, #ffb3b3);
+}
+
+/* Efecto de pulso al hacer clic */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+#boton:active {
+    animation: pulse 0.3s;
+}
+#boton {
+    display: block;
+    margin: 40px auto 20px;
+    width: fit-content;
+}

@@ -286,3 +286,66 @@ h1::after {
 .reason-item:has(.reason-title:empty) {
   display: none;
 }
+/* Mejoras para el título en pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+    margin: 40px 20px;
+    padding: 30px 25px 50px;
+  }
+
+  h1 {
+    font-size: 2.2rem; /* Reducido de 2.6rem */
+    margin-bottom: 15px; /* Reducido el margen inferior */
+    word-wrap: break-word; /* Permitir que el texto se rompa */
+    overflow-wrap: break-word;
+    hyphens: auto; /* Habilitar guiones para palabras largas */
+  }
+
+  h1::after {
+    right: -30px; /* Ajustado de -40px */
+    font-size: 1.6rem;
+  }
+
+  .text-center {
+    margin-bottom: 40px; /* Reducido de 60px */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 20px 15px;
+    padding: 25px 20px 40px;
+    border-radius: 12px; /* Reducido de 16px */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Reducido de 2.2rem */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    padding-right: 20px; /* Espacio para el corazón */
+  }
+
+  h1::after {
+    right: -15px; /* Ajustado de -30px */
+    font-size: 1.2rem; /* Reducido de 1.4rem */
+    top: 5px; /* Ajustar posición vertical */
+  }
+
+  .text-center {
+    margin-bottom: 30px; /* Reducido más */
+  }
+}
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 360px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  
+  h1::after {
+    position: static; /* Posicionar el corazón debajo en pantallas muy pequeñas */
+    display: block;
+    margin-top: 5px;
+  }
+}

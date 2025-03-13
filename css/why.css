@@ -290,3 +290,99 @@ h1::after {
 .reason-item:has(.reason-title:empty) {
   display: none;
 }
+
+/*Css del recuadro aparte*/
+/* Estilos para el nuevo recuadro especial */
+.special-box {
+  background: linear-gradient(145deg, #ffffff 0%, #ffe6e6 100%);
+  border-radius: 25px;
+  box-shadow: 0 8px 30px rgba(255, 105, 180, 0.25);
+  margin: 40px auto;
+  max-width: 1200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.special-box::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(
+      circle,
+      rgba(255,105,180,0.15),
+      transparent 70%
+  );
+  transform: rotate(25deg);
+  z-index: 0;
+}
+
+.special-box .row {
+  position: relative;
+  z-index: 1;
+}
+
+.special-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #ff1493;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.special-title::before {
+  content: '❝';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  font-size: 3rem;
+  color: #ff69b4;
+  line-height: 1;
+}
+
+.special-text {
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  position: relative;
+  padding-left: 30px;
+}
+
+.special-text::after {
+  content: '❞';
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  font-size: 3rem;
+  color: #ff69b4;
+  line-height: 1;
+}
+
+.special-image {
+  border-radius: 15px;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.special-image:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .special-title {
+      font-size: 1.8rem;
+  }
+  
+  .special-text {
+      font-size: 1rem;
+  }
+  
+  .special-box {
+      margin: 30px auto;
+  }
+}

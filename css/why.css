@@ -368,6 +368,11 @@ h1::after {
   object-fit: cover;
   transition: transform 0.3s ease;
 }
+@media (max-width: 768px) {
+  .special-image {
+    max-width: 250px; /* Cambia según lo que necesites */
+  }
+}
 
 .special-image:hover {
   transform: scale(1.05);

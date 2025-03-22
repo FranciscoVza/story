@@ -7,12 +7,20 @@
 
 body {
   font-family: "Montserrat", "Segoe UI", sans-serif;
-  background: #f9f4f5;
+  background: #f9f4f5 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f4c7d3' fill-opacity='0.2'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   color: #3a3a3a;
   line-height: 1.8;
   overflow-x: hidden;
   min-height: 100vh;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f4c7d3' fill-opacity='0.2'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Variables para colores y gradientes */
+:root {
+  --primary-gradient: linear-gradient(to right, #e66465, #9198e5);
+  --box-shadow-light: 0 8px 20px rgba(200, 159, 176, 0.1);
+  --box-shadow-medium: 0 10px 50px rgba(213, 143, 171, 0.2);
+  --pink-color: #d1517a;
+  --text-color: #555;
 }
 
 .container {
@@ -21,36 +29,31 @@ body {
   padding: 30px 40px 60px;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 16px;
-  box-shadow: 0 10px 50px rgba(213, 143, 171, 0.2);
+  box-shadow: var(--box-shadow-medium);
   position: relative;
 }
 
-.container::before {
+.container::before,
+.container::after {
   content: "";
   position: absolute;
-  top: -20px;
   left: 0;
   right: 0;
   height: 40px;
-  background: linear-gradient(135deg, #e66465 0%, #9198e5 100%);
   border-radius: 50%;
   filter: blur(30px);
   opacity: 0.6;
   z-index: -1;
 }
 
+.container::before {
+  top: -20px;
+  background: linear-gradient(135deg, #e66465 0%, #9198e5 100%);
+}
+
 .container::after {
-  content: "";
-  position: absolute;
   bottom: -20px;
-  left: 0;
-  right: 0;
-  height: 40px;
   background: linear-gradient(135deg, #9198e5 0%, #e66465 100%);
-  border-radius: 50%;
-  filter: blur(30px);
-  opacity: 0.6;
-  z-index: -1;
 }
 
 /* Estilos del título */
@@ -63,7 +66,7 @@ h1 {
   font-size: 3.4rem;
   margin-bottom: 20px;
   font-weight: 800;
-  background: linear-gradient(to right, #e66465, #9198e5);
+  background: var(--primary-gradient);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -78,7 +81,7 @@ h1::after {
   top: 0;
   font-size: 2rem;
   animation: float 3s ease-in-out infinite;
-  background: linear-gradient(to right, #e66465, #9198e5);
+  background: var(--primary-gradient);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -99,7 +102,7 @@ h1::after {
   border-radius: 12px;
   padding: 30px;
   transition: all 0.4s ease;
-  box-shadow: 0 8px 20px rgba(200, 159, 176, 0.1);
+  box-shadow: var(--box-shadow-light);
   border: 1px solid rgba(213, 143, 171, 0.1);
   overflow: hidden;
   opacity: 0;
@@ -113,7 +116,7 @@ h1::after {
   left: 0;
   width: 100%;
   height: 5px;
-  background: linear-gradient(to right, #e66465, #9198e5);
+  background: var(--primary-gradient);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s ease;
@@ -136,7 +139,7 @@ h1::after {
 .reason-title {
   font-size: 1.5rem;
   margin-bottom: 16px;
-  color: #d1517a;
+  color: var(--pink-color);
   font-weight: 700;
   position: relative;
   padding-bottom: 12px;
@@ -149,13 +152,167 @@ h1::after {
   left: 0;
   width: 40px;
   height: 2px;
-  background: linear-gradient(to right, #e66465, #9198e5);
+  background: var(--primary-gradient);
 }
 
 .reason-description {
-  color: #555;
+  color: var(--text-color);
   line-height: 1.9;
   font-size: 1.05rem;
+}
+
+/* Typewriter - solo visible en escritorio */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.05em;
+}
+
+/* Recuadro especial */
+.special-box {
+  background: linear-gradient(145deg, #ffffff 0%, #ffe6e6 100%);
+  border-radius: 25px;
+  box-shadow: 0 8px 30px rgba(255, 105, 180, 0.25);
+  margin: 40px auto;
+  max-width: 1200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.special-box::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(255,105,180,0.15), transparent 70%);
+  transform: rotate(25deg);
+  z-index: 0;
+}
+
+.special-box .row {
+  position: relative;
+  z-index: 1;
+}
+
+.special-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #ff1493;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.special-title::before {
+  content: '❝';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  font-size: 3rem;
+  color: #ff69b4;
+  line-height: 1;
+}
+
+.special-text {
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  line-height: 1.8;
+  position: relative;
+  padding-left: 30px;
+}
+
+.special-text::after {
+  content: '❞';
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  font-size: 3rem;
+  color: #ff69b4;
+  line-height: 1;
+}
+
+.special-image {
+  border-radius: 15px;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.special-image:hover {
+  transform: scale(1.05);
+}
+
+/* Línea de tiempo */
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: #ff4d6d;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  width: 50%;
+  padding: 20px;
+  background: #ffe5ec;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+  align-items: flex-end;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-badge {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.5em;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  background: #ff4d6d;
+  color: white;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-content {
+  padding: 20px;
+  padding-top: 60px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  text-align: right;
 }
 
 /* Animaciones */
@@ -177,14 +334,7 @@ h1::after {
 .reason-item:nth-child(5) { animation-delay: 1.5s; }
 .reason-item:nth-child(6) { animation-delay: 1.8s; }
 
-/* Estilos de typewriter - solo visible en escritorio */
-.typewriter {
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.05em;
-}
-
+/* Media queries para responsividad */
 @media (min-width: 769px) {
   .typewriter {
     border-right: 3px solid #e66465;
@@ -202,7 +352,6 @@ h1::after {
   }
 }
 
-/* Media queries para responsividad */
 @media (max-width: 768px) {
   .container {
     margin: 40px 15px;
@@ -226,7 +375,6 @@ h1::after {
     white-space: normal;
   }
 
-  /* Quitar efecto typewriter en móvil */
   .typewriter {
     width: 100% !important;
     animation: none;
@@ -236,7 +384,6 @@ h1::after {
     overflow: visible;
   }
 
-  /* Reposicionar corazón */
   h1::after {
     position: static;
     display: block;
@@ -251,6 +398,22 @@ h1::after {
 
   .reason-item {
     padding: 20px;
+  }
+  
+  .special-title {
+    font-size: 1.8rem;
+  }
+  
+  .special-text {
+    font-size: 1rem;
+  }
+  
+  .special-box {
+    margin: 30px auto;
+  }
+  
+  .special-image {
+    max-width: 250px;
   }
 }
 
@@ -291,197 +454,16 @@ h1::after {
   display: none;
 }
 
-/*Css del recuadro aparte*/
-/* Estilos para el nuevo recuadro especial */
-.special-box {
-  background: linear-gradient(145deg, #ffffff 0%, #ffe6e6 100%);
-  border-radius: 25px;
-  box-shadow: 0 8px 30px rgba(255, 105, 180, 0.25);
-  margin: 40px auto;
-  max-width: 1200px;
-  position: relative;
-  overflow: hidden;
-}
-
-.special-box::before {
-  content: '';
-  position: absolute;
-  top: -10%;
-  left: -10%;
-  width: 120%;
-  height: 120%;
-  background: radial-gradient(
-      circle,
-      rgba(255,105,180,0.15),
-      transparent 70%
-  );
-  transform: rotate(25deg);
-  z-index: 0;
-}
-
-.special-box .row {
-  position: relative;
-  z-index: 1;
-}
-
-.special-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
-  color: #ff1493;
-  margin-bottom: 20px;
-  position: relative;
-  padding-left: 30px;
-}
-
-.special-title::before {
-  content: '❝';
-  position: absolute;
-  left: 0;
-  top: -10px;
-  font-size: 3rem;
-  color: #ff69b4;
-  line-height: 1;
-}
-
-.special-text {
-  font-family: 'Lora', serif;
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.8;
-  position: relative;
-  padding-left: 30px;
-}
-
-.special-text::after {
-  content: '❞';
-  position: absolute;
-  right: 0;
-  bottom: -20px;
-  font-size: 3rem;
-  color: #ff69b4;
-  line-height: 1;
-}
-
-.special-image {
-  border-radius: 15px;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-@media (max-width: 768px) {
-  .special-image {
-    max-width: 250px; /* Cambia según lo que necesites */
-  }
-}
-
-.special-image:hover {
-  transform: scale(1.05);
-}
-
-@media (max-width: 768px) {
-  .special-title {
-      font-size: 1.8rem;
-  }
-  
-  .special-text {
-      font-size: 1rem;
-  }
-  
-  .special-box {
-      margin: 30px auto;
-  }
-}
-
-/*Linea de tiempo*/
-/*LINEA DE TIEMPO*/
-.timeline {
-  position: relative;
-  padding: 20px 0;
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 4px;
-  background: #ff4d6d;
-  transform: translateX(-50%);
-}
-
-.timeline-item {
-  position: relative;
-  margin-bottom: 40px;
-  width: 50%;
-  padding: 20px;
-  box-sizing: border-box;
-  background: #ffe5ec;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.timeline-item:nth-child(odd) {
-  left: 0;
-  text-align: right;
-  align-items: flex-end;
-}
-
-.timeline-item:nth-child(even) {
-  left: 50%;
-}
-
-.timeline-badge {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  font-size: 1.5em;
-  text-align: center;
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  background: #ff4d6d;
-  color: white;
-  border-radius: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.timeline-content {
-  padding: 20px;
-  padding-top: 60px; /* Espacio para que el icono no se sobreponga */
-  border-radius: 8px;
-  text-align: left;
-}
-
-.timeline-item:nth-child(odd) .timeline-content {
-  text-align: right;
-}
-
-
-/*no se, cambiando el fondo*/
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f9; /* Un tono suave para reducir la fatiga visual */
-  color: #333; /* Texto oscuro para mejor contraste */
-}
-
+/* Elementos de página básicos - eliminados los estilos duplicados */
 header {
-  background-color: #4a90e2; /* Azul suave y profesional */
+  background-color: #4a90e2; 
   color: white;
   padding: 20px;
   text-align: center;
 }
 
 nav {
-  background-color: #357ABD; /* Azul ligeramente más oscuro para contraste */
+  background-color: #357ABD;
   padding: 10px;
 }
 
@@ -493,11 +475,11 @@ nav a {
 
 main {
   padding: 20px;
-  background-color: #ffffff; /* Fondo claro para mayor legibilidad */
+  background-color: #ffffff;
   border-radius: 8px;
   margin: 20px auto;
   max-width: 800px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sutil sombra para mejor estética */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
